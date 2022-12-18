@@ -1,32 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html
-        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-    <title>Ứng dụng máy tính</title>
-</head>
-<body>
-<form>
-    <input type="text" id="firstNumber" name="firstNumber" value=""/>
-    <input type="text" id="secondsNumber" name="secondsNumber" value=""/><br/><br/>
-    <button class="btn"value="+">
-         <b>Addition(+)</b>
-    </button>
-    <button class="btn"value="-">
-       <b>Subtraction(-)</b>
-    </button>
-    <button class="btn"value="*">
-        <b>Multiplication(*)</b>
-    </button>
-    <button class="btn"value="/">
-        <b>Division(/)</b>
-    </button>
-    <script>
-       function Addition
-       const number = document.getElementsByClassName('btn');
+<!DOCTYPE html>
+<html lang="en">
 
-</script>
-</form>
+<head>
+    <meta charset="UTF-8"></meta>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"></meta>
+    <title>Ứng dụng máy tính</title>
+    <script src="Ứng%20dụng%20máy%20tính.js"></script>
+    <link rel="stylesheet" href="Ứng%20dụng%20máy%20tính.css"/>
+</head>
+
+<body>
+<div class="container">
+    <div class="title"></div>
+    <div class="results">
+        <input type="text" class="reslts" id="resltsInput"/>
+    </div>
+    <div class="buttons">
+        <button class="button" onclick="buttonHandler(this)">7</button>
+        <button class="button" onclick="buttonHandler(this)">8</button>
+        <button class="button" onclick="buttonHandler(this)">9</button>
+        <button class="button" onclick="buttonHandler(this)">+</button>
+    </div>
+    <div class="buttons">
+        <button class="button" onclick="buttonHandler(this)">4</button>
+        <button class="button" onclick="buttonHandler(this)">5</button>
+        <button class="button" onclick="buttonHandler(this)">6</button>
+        <button class="button" onclick="buttonHandler(this)">-</button>
+    </div>
+    <div class="buttons">
+        <button class="button" onclick="buttonHandler(this)">1</button>
+        <button class="button" onclick="buttonHandler(this)">2</button>
+        <button class="button" onclick="buttonHandler(this)">3</button>
+        <button class="button" onclick="buttonHandler(this)">*</button>
+    </div>
+    <div class="buttons">
+        <button class="button" onclick="buttonHandler(this)">0</button>
+        <button class="button" onclick="buttonHandler(this)">C</button>
+        <button class="button" onclick="buttonHandler(this)">=</button>
+        <button class="button" onclick="buttonHandler(this)">/</button>
+    </div>
+</div>
 </body>
 </html>
