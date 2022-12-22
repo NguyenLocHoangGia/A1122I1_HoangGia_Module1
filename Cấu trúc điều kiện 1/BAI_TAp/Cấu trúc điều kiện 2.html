@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>So sánh 3 số với 0</title>
+</head>
+<body>
+<script>
+  let a =  parseInt(prompt("Nhập số cần so sánh thứ 1: "))
+  let b =  parseInt(prompt("Nhập số cần so sánh thứ 2: "))
+  let c =  parseInt(prompt("Nhập số cần so sánh thứ 3: "))
+  max = a
+  if (max<b){
+    max = b
+    if (max<c){
+      alert("số lớn nhất là: " + c)
+    }else {
+      alert("số lớn nhất là: " + b)
+    }
+  }else {
+    if (max>c){
+      alert("số lớn nhất là: "+ a)
+    }else {
+      alert("s lớn nhất là c: "+ c)
+    }
+  }
+
+</script>
+</body>
+</html>

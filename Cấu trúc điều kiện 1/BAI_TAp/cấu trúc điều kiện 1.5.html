@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Học lực học sinh</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Điểm hệ số 1: "))
+    let b = parseInt(prompt("Điểm giữa kì: "))
+    let c = parseInt(prompt("Điểm cuối kì: "))
+    let DTB= (a + (b*2) + (c*3))/6
+    if (DTB< 3.5){
+        document.write("Bạn không đủ điểm để lên lớp trực tiếp")
+    }else if (DTB<5){
+      document.write("Bạn đạt danh hiệu học sinh yếu với số điểm: "+ DTB)
+    }else if(DTB<6.5){
+      document.write("Bạn đạt danh hiệu học sinh trung bình với số điểm: "+ DTB)
+    }else if (DTB<8){
+        document.write("Bạn đạt danh hiệu học sinh khá với số điểm: "+ DTB)
+    }else if (DTB<= 10){
+        document.write("Bạn đạt danh hiệu học sinh giỏi với số điểm: "+ DTB)
+    }else {
+        document.write("Bạn là con hiệu trưởng rồi!!!")
+    }
+</script>
+</body>
+</html>

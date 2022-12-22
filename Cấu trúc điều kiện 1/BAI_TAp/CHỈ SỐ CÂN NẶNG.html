@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chỉ số cân nặng</title>
+</head>
+
+<body>
+<script>
+  let weight = parseInt(prompt("your weight:"));
+  let heigh = parseInt(prompt("your heigh: "));
+  let BIM = weight / (heigh ^ 2);
+  if (BIM < 18.5){
+      document.write("Underweigh")
+  }else if(18.5 <= BIM < 25){
+      document.write("Normal")
+  }else if(25 <= BIM < 30 ){
+      document.write("Overweight")
+  } else{
+      document.write("weight")
+  }
+
+</script>
+</body>
+</html>
