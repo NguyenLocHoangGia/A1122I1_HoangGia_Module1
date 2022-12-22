@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Tính diện tích hình vuông khi biết cạnh a.</title>
 </head>
 <body>
-$END$
+<script>
+  let a =+prompt("Độ dài của cạnh hình vuông: ")
+  let s = a*a
+  if (a<=0){
+    alert("Độ dài hình vuông phải là số dương")
+  }else {
+    document.write("Diện tích hình vuông: "+s)
+  }
+</script>
 </body>
 </html>

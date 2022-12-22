@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Thuế thu nhập cá nhân</title>
 </head>
 <body>
-$END$
+<script>
+  let a = +prompt("Thu nhập của bạn là:")
+  if (a<=0){
+      alert("Bạn không cần phải nộp thuế: ")
+  }else if (a<=5000000){
+      alert("Thuế bạn phải nộp là: "+a * 5/100)
+  }else if (a<=10000000){
+      alert("Thuế bạn phải nộp là: "+a *10/100)
+  }else if (a<=18000000){
+      alert("Thuế bạn phải nộp là: "+a*15/100)
+  }else if (a<=32000000) {
+      alert("Thuế bạn phải nộp là: " + a * 20 / 100)
+  }else if (a<=52000000) {
+      alert("Thuế bạn phải nộp là: " + a * 25 / 100)
+  }else if (a<=80000000) {
+      alert("Thuế bạn phải nộp là: " + a * 30 / 100)
+  }else if (a>80000000) {
+      alert("Thuế bạn phải nộp là: " + a * 35 / 100)
+  }
+</script>
 </body>
 </html>

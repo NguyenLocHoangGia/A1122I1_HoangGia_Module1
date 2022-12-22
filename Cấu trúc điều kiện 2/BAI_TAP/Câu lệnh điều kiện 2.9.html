@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Kiểm tra xem 3 số thực (a,b,c) nhập vào có phải là cạnh của một tam giác.</title>
 </head>
 <body>
-$END$
+<script>
+  let a = +prompt("Nhập cạnh thứ nhất")
+  let b = +prompt("Nhập cạnh thứ hai")
+  let c = +prompt("Nhập cạnh thứ ba")
+  if (a>0&&b>0&&c>0){
+    if (a+b>c){
+      if (b+c>a){
+        if (a+c>b){
+          alert("Đây là hình tam giác")
+        }else {
+          alert("Đây không phải hình tam giác")
+      }
+    }
+  }
+  }
+</script>
 </body>
 </html>
