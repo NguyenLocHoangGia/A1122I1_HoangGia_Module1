@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tổng dãy số</title>
+</head>
+<body>
+<script>
+  let i=0
+  let j=1
+  let s=1
+  let C=0
+  document.writeln(i)
+  document.writeln(j)
+  let n=0
+  for (n;n<=18;n++){
+    document.writeln(s);
+    i=j;
+    j=s;
+    s = i+j;
+    C = C + s;
+  }document.writeln("Tổng 20 số đầu tiên: " + C)
+</script>
+</body>
+</html>
