@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lãi suất</title>
+</head>
+<body>
+<table>
+  <tr>
+    <th>
+      Số tiền vay
+    </th>
+      <td style="width: 50px"></td>
+    <th>
+        Tổng số tháng vay
+    </th>
+      <td style="width: 50px"></td>
+    <th>
+        Lãi suất
+    </th>
+      <td style="width: 50px"></td>
+  </tr>
+    <tr>
+        <td>
+            <input type="text" name="abc" id="Tienvay">
+        <td style="width: 50px"></td> <td>
+            <input type="text" name="abc" id="Thangvay">
+        <td style="width: 50px"></td> <td>
+            <input type="text" name="abc" id="Laisuat">
+        <td style="width: 50px"></td>
+    </tr>
+</table>
+<td>
+    <input type="button" value="Kiểm tra" onclick="change()">
+</td>
+<p id="result" style="color: black"></p>
+<script>
+    function change() {
+        let a = document.getElementById("Tienvay").value;
+        let b = document.getElementById("Thangvay").value;
+        let c = document.getElementById("Laisuat").value;
+        let result;
+        for (let i =1;i<=b;i++){
+            result=a*(1+c)^b
+            a=result;
+        }
+        document.getElementById("result").innerText = "Result: " + result
+    }
+</script>
+</body>
+</html>
