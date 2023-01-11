@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Finonaci</title>
+</head>
+<body>
+<script>
+  let n = +prompt("Dãy Finonaci của bạn muốn bao nhiêu số: ")
+  let truoc=0;
+  let sau=1;
+  let fibo=1;
+  let tong = 1;
+  document.writeln(truoc);
+  for(let i=1;i<=n-1;i++){//Vì đã in 2 số rồi nên còn phải in 18 số nữa
+    document.writeln(fibo);
+    tong=tong+fibo;
+    truoc=sau;
+    sau=fibo;
+    fibo = truoc + sau;
+  }
+</script>
+</body>
+</html>
