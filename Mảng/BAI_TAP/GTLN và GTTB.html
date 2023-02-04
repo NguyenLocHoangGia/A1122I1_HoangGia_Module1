@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GTLN và GTTB</title>
+</head>
+<body>
+<script>
+  let a = +prompt("Số phần tử của mảng là: ")
+  let max = 0;
+  let s = 0;
+  let tb = 0;
+  let array = [];
+  let i
+  for ( i = 1; i <= a; i++) {
+    array[i - 1] = +prompt("Nhập vào phần tử thứ: "+i);
+  }
+  for (let i = 0; i <= array.length ; i++) {
+    if (array[i]>max){
+      max=array[i];
+      s=s+array[i];
+      tb=s/a;
+    }
+  }
+  document.writeln("Số lớn nhất là: "+ max)
+  document.writeln("Giá trị trung bình là: "+tb)
+</script>
+</body>
+</html>

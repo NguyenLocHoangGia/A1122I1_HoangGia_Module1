@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm em</title>
+</head>
+<body>
+<script>
+    let n = +prompt("Số phần tử của mảng là: ")
+    let array = []
+    let i
+    for (i=0;i<=n;i++){
+        array[i - 1] = +prompt("Phần thử thứ: "+ (i+1))
+    }
+    let v=+prompt("Nhập giá trị của V: ")
+    for (let j = 0; j < array.length; j++) {
+        if (array.indexOf(v)!== -1){
+            document.writeln("V is in the array")
+        }else {
+            document.writeln("V is not in the array")
+        }break
+    }
+</script>
+</body>
+</html>

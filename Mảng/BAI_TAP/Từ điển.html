@@ -5,26 +5,16 @@
     <title>Từ điển</title>
 </head>
 <body>
-<table>
-  <tr>
-    <th>
-      Tiếng Anh
-    </th>
-    <td style="width: 50px"></td>
-  </tr>
-  <tr>
-    <td>
-      <input type="text" name="abc" id="tienganh">
-    <td style="width: 50px"></td><td>
-  <td>
-    <input type="button" value="Tra" onclick="change()">
-  </td>
-</table>
-<p id="result" style="color: #010105"></p>
 <script>
-  function change(){
-    let arr = ["Book","Pen","Car","Happy"]
+  let ta = ["book", "car","red","human"]
+  let tv = ["sách","xe","đỏ","người"]
+  let nhap = prompt("Nhập từ cần tra cứu")
+  for (let i = 0; i < ta.length; i++) {
+      if (ta[i]==nhap && nhap == tv[i]){
+          document.writeln(ta[i])
+      }else {document.writeln("Không tìm thấy")}
   }
+
 </script>
 </body>
 </html>

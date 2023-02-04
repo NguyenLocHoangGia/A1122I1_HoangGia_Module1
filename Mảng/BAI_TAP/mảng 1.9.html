@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tổng 2 mảng</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Số phần tử của mảng a: ")
+    let b = +prompt("Số phần tử của mảng b: ")
+    let A = []
+    let B = []
+    for (let i = 0; i <= a; i++) {
+        A[i - 1] = +prompt("Phần thử thứ: "+ (i+1) +"của mảng A")
+    }for (let j = 0; j <= b; j++) {
+        B[j - 1] = +prompt("Phần thử thứ: "+ (j+1) + "của mảng B")
+    }
+    let c = A.concat(B)
+    document.writeln("Phần tử mảng C: "+c)
+</script>
+</body>
+</html>

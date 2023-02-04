@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đảo ngược vị trí</title>
+</head>
+<body>
+<script>
+   let a = +prompt("Số phần tử của mảng: ")
+   let array = []
+   for ( i = 0; i <= a; i++) {
+       array[i-1] = +prompt("Phần thử thứ: "+ i)
+   }document.writeln("Vị trí sau khi đảo ngược: "+ array.reverse())
+</script>
+</body>
+</html>

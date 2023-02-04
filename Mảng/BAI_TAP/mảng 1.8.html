@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sắp xếp</title>
+</head>
+<body>
+<script>
+    let n = +prompt("Số phần tử của mảng là: ")
+    let array = []
+    let i
+    for (i=0;i<=n;i++){
+        array[i - 1] = +prompt("Phần thử thứ: "+ (i+1))
+    }
+    array.sort(function (a,b){return b -a});
+    document.writeln("Sau khi sắp xếp: "+array)
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GTLN và Vị trí</title>
+</head>
+<body>
+<script>
+  let a = 10;
+  let max = 0;
+  let b = 0;
+  let array = [];
+  let i;
+  for ( i = 1; i <= a; i++) {
+    array[i - 1] = +prompt("Nhập vào phần tử thứ: "+i);
+  }
+  for (i=0;i<=array.length;i++) {
+    if (array[i] > max) {
+      max = array[i];
+      count = i;
+    }
+  }
+  document.writeln("Giá trị lớn nhất: "+max)
+  document.writeln("Nằm ở vị trí: "+b)
+</script>
+</body>
+</html>
