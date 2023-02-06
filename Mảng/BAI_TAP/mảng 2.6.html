@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thay đổi kí tự</title>
+</head>
+<body>
+<script>
+  let a = +prompt("Số phần tử của mảng: ")
+  let array = []
+  for ( i = 0; i <= a; i++) {
+    array[i - 1] = +prompt("Phần thử thứ: " + i)
+  }
+  for (let i = 0; i < array.length; i++) {
+    if (array[i]=== '-'){
+      array.splice(i,1,'_');
+    }
+  }
+  document.writeln("Chuỗi sau thay đổi là: "+ array)
+</script>
+</body>
+</html>
