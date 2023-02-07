@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi độ dài</title>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <td style="width: 50px"></td>
+            <th>From Currency</th>
+            <td style="width: 50px"></td>
+            <th>To Currency</th>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" name="abc" id="inputnumber">
+            <td style="width: 50px"></td>
+            <td>
+                <select name="đơnvịđầutiên" id="đơnvịđầutiên">
+                    <option value="feet">feed</option>
+                    <option value="met">met</option>
+                </select>
+            </td>
+            <td style="width: 50px"></td>
+            <td>
+                <select name="đơnvịthứ2" id="đơnvịthứ2">
+                    <option value="feet">feed</option>
+                    <option value="met">met</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+</form>
+<td>
+    <input type="button" value="convert" onclick="change()">
+</td>
+<p id="result" style="color: blue"></p>
+<script>
+    function change(){
+        let kc = document.getElementById("inputnumber").value
+        let a = document.getElementById("đơnvịđầutiên").value
+        let b = document.getElementById("đơnvịthứ2").value
+        let result
+        if (a===b){
+            result = kc
+        }else if (a=="met" && b=="feet"){
+            result = kc * 0.305 +"foot"
+        }else {
+            result = kc *3.279 +"meter"
+        }
+        document.getElementById("result").innerText = "Result: " + result
+
+    }
+</script>
+</body>
+</html>

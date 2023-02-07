@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a = +prompt("Nhập số thứ nhất: ")
+  let b = +prompt("Nhập số thứ hai: ")
+  function number(s1,s2){
+    if (s1==s2){
+      document.writeln("2 số này bằng nhau")
+    }else if (s1>s2){
+      document.writeln(s1 + "lớn hơn" +s2)
+    }else {
+      let S = s2+s1
+      document.writeln("Tổng của 2 số là: "+S)
+    }
+  }number(a,b)
+</script>
+</body>
+</html>
