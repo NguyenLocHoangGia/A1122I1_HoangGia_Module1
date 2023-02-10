@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a = +prompt("Nhập mức lương của bạn(VND) ")
+  if (7000000<a){
+      b = a*0.05;
+  }else if(7000000 <= a< 15000000){
+      b= a*0.1;
+  }else if(a<=15000000){
+      b=a*0.2;
+  } else{
+      document.writeln("hãy nhập số dương!")
+  }document.writeln("Thuế thu nhập cá nhân của bạn là: "+b)
+  document.writeln("Lương ròng của bạn là: "+(a-b))
+</script>
+</body>
+</html>
