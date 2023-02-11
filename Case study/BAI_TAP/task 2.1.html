@@ -8,13 +8,20 @@
 <script>
     let h=5
     for (let i = 1; i <= h; i++) {
+        if(i==h){
+            for (let j = 1; j <=i ; j++) {
+                document.write("*");
+            }break;
         }
-        for (let j = 1; j <= i ; j++) {
-            if (i==1 || i == h || j==1 || j == i*2-1){
-                document.writeln("*")
-            }else {
-            }document.writeln("<br />")
+        for (let j = 1; j <= i; j++) {
+            if( j == 1 || j == i){
+                document.write("*");
+            }else{
+                document.write("&nbsp; ");
+            }
         }
+        document.write("<br/>");
+    }
 </script>
 </body>
 </html>
