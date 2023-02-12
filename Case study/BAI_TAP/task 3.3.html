@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let drinks = ['Cafe', 'Cam vắt', 'Nước ép cà rốt', 'Nước ép cà chua', 'Nước lọc', 'Nước dừa'];
+    let prices = [15000, 25000, 30000, 30000, 10000, 15000];
+
+    let choice = 0;
+    let total = 0;
+alert("Các món bao gồm: 1-cafe,2-cam vắt, 3-nước ép cà rốt, 4-nước ép cà chua, 5-nước lọc,6-nước dừa")
+    do {
+        console.log('Menu: ');
+        for (let i = 0; i < drinks.length; i++) {
+            console.log((i + 1) + '. ' + drinks[i]);
+        }
+        console.log((drinks.length + 1));
+        choice = prompt('Bạn muốn gọi món gì? (1-' + (drinks.length + 1) + ')(Nếu nhập 7 sẽ kết thúc gọi món và tính tiền)');
+        if (choice > 0 && choice <= drinks.length) {
+            let amount = prompt('Với số lượng?');
+            total += prices[choice - 1] * amount;
+        }
+    } while (choice != drinks.length + 1);
+
+    document.writeln('Tổng số tiền là: ' + total + 'đ');
+</script>
+</body>
+</html>

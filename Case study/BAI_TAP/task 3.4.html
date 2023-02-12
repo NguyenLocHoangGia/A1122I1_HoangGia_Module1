@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let tuso = [5,2,5]
+  let mauso = [6,3,4]
+  let result = phanso(tuso,mauso)
+  function phanso (tuso,mauso){
+      let vitri = 0;
+      let maxphanso = tuso[0]/mauso[0]
+      for (let i = 0; i < mauso.length; i++) {
+          let a = tuso[i]/mauso[i]
+          if (a>maxphanso){
+              a=maxphanso
+              vitri=i
+          }
+      }
+      return vitri;
+  }document.writeln("Chỉ số phân số lớn nhất: "+result)
+
+</script>
+</body>
+</html>
